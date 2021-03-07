@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "target": "es5",
+    "allowJs": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "esModuleInterop": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "classnameTransform": "dashes",
+          "customMatcher": "\\.m\\.(c|sc)ss$",
+          "customRenderer": "./myRenderer.js",
+          "dotenvOptions": {},
+          "postCssOptions": {},
+          "rendererOptions": {}
+        }
+      }
+    ]
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,18 @@
+.found-movies-info {
+  grid-column: span 2;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  font-size: 18px;
+  span {
+    font-weight: bold;
+  }
+}
+
+.movies-grid {
+  grid-column: span 2;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
+}

@@ -1,0 +1,32 @@
+.movie-card {
+  width: 100%;
+  color: #FFFFFF;
+  font-family: sans-serif;
+  justify-self: center;
+
+  img {
+    width: 100%;
+  }
+
+  .card-info {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    .movie-title {
+      font-size: 20px;
+      letter-spacing: 3px;
+    }
+
+    .movie-releasedate {
+      align-self: end;
+      justify-self: end;
+      border: .5px solid;
+      padding: 5px 5px 5px 5px;
+      text-align: center;
+    }
+  }
+
+
+}
+
+
