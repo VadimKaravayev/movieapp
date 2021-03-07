@@ -6,7 +6,7 @@
     "noImplicitReturns": true,
     "noImplicitAny": true,
     "moduleResolution": "node",
-    "target": "es5",
+    "target": "es6",
     "allowJs": true,
     "jsx": "react",
     "allowSyntheticDefaultImports": true,

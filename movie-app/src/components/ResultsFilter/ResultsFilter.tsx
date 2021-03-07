@@ -1,16 +1,16 @@
 import React from 'react';
+import { CategoryLink } from "../CategoryLink/CategoryLink";
+
 
 interface ResultsFilterProps {
     categories: string[];
 }
 
-export const ResultsFilter: React.FC<ResultsFilterProps> = ({categories}) => {
-    const LinkTag = 'a';
-    return (
+export const ResultsFilter: React.FC<ResultsFilterProps> = ({categories}) =>
+    (
         <div>
             <ul className="results-filter-links">
-                {categories.map(category => (<li key={category}><LinkTag href={'?category='+ category}>{category}</LinkTag></li>))}
+                {categories.map(category => (<CategoryLink key={category} category={category} />))}
             </ul>
         </div>
     );
-};
